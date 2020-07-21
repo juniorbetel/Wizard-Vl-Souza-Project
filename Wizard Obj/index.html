@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <header class="header container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div id="cursos" class="curso align-self-center">
+                    <ul class="curso__list">
+                        <li class="curso__item"><a href="#" class="curso__link">kids</a></li>
+                        <li class="curso__item"><a href="#" class="curso__link">teens</a></li>
+                        <li class="curso__item"><a href="#" class="curso__link">adults</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="livros" class="curso">
+                    <ul id="curso-list" class="curso__list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col container-fluid bg-info p-1">
+                <div id="lessons" class="curso ">
+                    <ul id="lesson-list" class="curso__list d-inline-block p-0">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="lesson-situation">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="lesson-situation__wrapper d-flex flex-column">
+                        <h2 class="text-center">Progresso Do Livro</h2>
+                        <ul class="lesson-situation__list align-self-center">
+                            <div class="wrapper">
+                                <li class="lesson-situation__item">Aula Feitas:
+                                    <div class="input">
+                                        <span id="aula-atual"></span>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="wrapper">
+                                <li class="lesson-situation__item">Aulas Restantes:
+                                    <div class="input">
+                                        <span id="aulas-restantes"></span>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="mybar">
+                                <div id="curso-progression" class="mybar__progression"></div>
+                            </div>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="lesson-situation__wrapper d-flex flex-column">
+                        <h2 class="text-center">Progresso Do Curso</h2>
+                        <ul class="lesson-situation__list align-self-center">
+                            <div class="wrapper">
+                                <li class="lesson-situation__item">Aulas Feitas:
+                                    <div class="input">
+                                        <span id="aulas-feitas-curso"></span>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="wrapper">
+                                <li class="lesson-situation__item">Aulas Restantes:
+                                    <div class="input">
+                                        <span id="aulas-restantes-curso"></span>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="mybar">
+                                <div id="curso-progression1" class="mybar__progression"></div>
+                            </div>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <form class="date-form">
+                        <div class="date-wrapper">
+                            <div class="date inicio-contratual">
+                                <label class="label" for="inicio-contrato">Início Contratual:</label>
+                                <input class="inputt" type="date" name="inicio-contrato" id="inicio-contrato">
+                            </div>
+                            <div class="date tempo-contratual">
+                                <label class="label" for="quantos-tempo">Duração: </label>
+                                <select class="inputt" name="tempo-contratual" id="quantos-tempo">
+                                        <option class="option" value="0">Selecione</option>
+                                        <option class="option" value="180">6 Meses</option>
+                                        <option class="option" value="365">1 Ano</option>
+                                        <option class="option" value="730">2 Anos</option>
+                                    </select>
+                            </div>
+                            <div class="date tempo Termino Contratual">
+                                <label class="label" for="termino-contrato">Termino Contratual:</label>
+                                <input class="inputt" type="date" name="termino-contrato" id="termino-contrato">
+                            </div>
+                            <div class="date tempo tempo-passado">
+                                <label id="label-tempo-passado" class="label  m-0" for="tempo-restante">Tempo Passado:</label>
+                                <p class="paragraph ">
+                                    Anos:<span id="tempo-passado-y" class="duration">0</span> Meses:
+                                    <span id="tempo-passado-m" class="duration">0</span> Dias:
+                                    <span id="tempo-passado-d" class="duration">0</span>
+                                </p>
+                            </div>
+                            <div class="date tempo tempo-restante">
+                                <label class="label" for="tempo-restante">Termino Restante:</label>
+                                <p class="paragraph ">
+                                    Anos:<span id="tempo-restante-y" class="duration">0</span> Meses:
+                                    <span id="tempo-restante-m" class="duration">0</span> Dias:
+                                    <span id="tempo-restante-d" class="duration">0</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+    <!--     <section class="contratos-dates">
+        <form>
+            <div class="data-wrapper">
+                <div class="inicio-contratual">
+                    <label for="inicio-contrato">Início Contratual:</label>
+                    <input type="date" name="inicio-contrato" id="inicio-contrato">
+                </div>
+                <div class="tempo-contratual">
+                    <label class="label date" for="quantos-tempo">Tempo de Contrato: </label>
+                    <select name="tempo-contratual" id="quantos-tempo">
+                        <option class="option" value="0">Selecione</option>
+                        <option class="option" value="180">6 Meses</option>
+                        <option class="option" value="365">1 Ano</option>
+                        <option class="option" value="730">2 Ano</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+    </section> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.js"></script>
+    <script src="moment.js"></script>
+    <script src="moment-precise-range.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+#cursos {
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#livros {
+    display: block;
+}
+
+.curso {
+    //padding: .5rem .5rem;
+    #curso-list {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 1rem 0rem;
+    }
+    &__item {
+        display: inline-block;
+        transition: all .3s;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+        &:hover {
+            box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.3);
+            transform: translateY(-2px);
+        }
+        &:active {
+            box-shadow: 0 .5rem .5rem rgba($color: #000000, $alpha: 0.3);
+            transform: translateY(0px);
+        }
+    }
+    &__link {
+        display: block;
+        color: rgb(214, 214, 214);
+        text-decoration: none !important;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: .5rem;
+        text-align: center;
+        &:hover,
+        &:visited,
+        &:focus {
+            background-color: rgb(224, 114, 114);
+            color: white;
+        }
+    }
+}
+
+#lessons {
+    //display: none;
+    padding: 0;
+    #lesson-list {
+        padding: 0;
+        .curso__item {
+            margin: 0;
+            padding: 0;
+            width: 3.6rem;
+            .curso__link {
+                font-size: 1.2rem;
+            }
+            ;
+            a[class^='R'] {
+                background-color: rgb(231, 162, 162);
+            }
+        }
+    }
+}
+
+.active {
+    display: inline-block !important;
+}

@@ -1,0 +1,189 @@
+#cursos ul {
+  display: flex;
+  justify-content: center;
+}
+
+#livros {
+  display: block;
+}
+
+.curso #curso-list {
+  display: flex;
+  justify-content: center;
+}
+
+.curso__list {
+  display: flex;
+  list-style: none;
+  padding: 1rem 0rem;
+}
+
+.curso__item {
+  display: inline-block;
+  transition: all .3s;
+}
+
+.curso__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.curso__item:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.curso__item:active {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  transform: translateY(0px);
+}
+
+.curso__link {
+  display: block;
+  color: #d6d6d6;
+  text-decoration: none !important;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: .5rem;
+  text-align: center;
+}
+
+.curso__link:hover, .curso__link:visited, .curso__link:focus {
+  background-color: #e07272;
+  color: white;
+}
+
+#lessons {
+  padding: 0;
+}
+
+#lessons #lesson-list {
+  padding: 0;
+}
+
+#lessons #lesson-list .curso__item {
+  margin: 0;
+  padding: 0;
+  width: 3.6rem;
+}
+
+#lessons #lesson-list .curso__item .curso__link {
+  font-size: 1.2rem;
+}
+
+#lessons #lesson-list .curso__item a[class^='R'] {
+  background-color: #e7a2a2;
+}
+
+.active {
+  display: inline-block !important;
+}
+
+* {
+  font-size: 10px;
+}
+
+.lesson-situation {
+  background-color: #c4f5f7;
+}
+
+.lesson-situation__list {
+  width: fit-content;
+  padding: .5rem;
+}
+
+.lesson-situation__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: .5rem;
+}
+
+.lesson-situation .input {
+  width: 5rem;
+  height: 3rem;
+  background-color: #d6ffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.lesson-situation .input span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 3rem;
+  color: #020101;
+}
+
+.mybar {
+  height: 30px;
+  width: 100%;
+  background-color: #d4d4d49a;
+}
+
+.mybar__progression {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.4rem;
+  height: 30px;
+  width: 0;
+  background-color: #46af60;
+}
+
+.date-wrapper .date {
+  display: flex;
+  justify-content: space-between;
+  padding: .2rem;
+}
+
+.date-wrapper .date:not(:last-child) {
+  margin-bottom: .2rem;
+}
+
+.date-wrapper .label {
+  align-self: center;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.date-wrapper .inputt {
+  padding: .2rem;
+  font-size: 1.3rem;
+  display: inline-block;
+  text-align: right;
+  width: 15rem;
+  outline: none;
+  border: none;
+}
+
+.date-wrapper .tempo {
+  display: none;
+}
+
+.date-wrapper .paragraph {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.date-wrapper .duration {
+  text-align: center;
+  font-size: 1.6rem;
+  display: inline-block;
+  width: 2.3rem;
+  font-weight: 500;
+  color: rgba(107, 109, 107, 0.808);
+}
+
+.date-wrapper .duration:first-child {
+  margin-left: .3rem;
+}
